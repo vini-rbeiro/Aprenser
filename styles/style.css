@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Maven+Pro:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --font-content: "Inter", sans-serif;
+  --font-title: "Maven Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  align-items: center;
+  background: #fed001;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0.4px 0.4px 0.4px black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-content);
+  font-size: 1.1rem;
+  height: 56px;
+  padding: 16px 48px;
+  width: fit-content;
+}
+
+.btn-header:hover {
+  background-color: transparent;
+  color: black;
+  outline: #2a2a2a 1px solid;
+}
+
+.btn-courses:hover {
+  background-color: #efeeee;
+  color: black;
+  outline: #2a2a2a 1px solid;
+}
+
+/* Nav Menu */
+#navmenu {
+  background-color: #2a2a2a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.navmenu-espacamento {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#navmenu img {
+  cursor: pointer;
+  width: 160px;
+}
+
+#navmenu ul {
+  display: flex;
+  gap: 35px;
+}
+#navmenu ul a {
+  text-decoration: none;
+}
+
+#navmenu ul a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#navmenu li {
+  color: #fed001;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  list-style-type: none;
+  outline: #fed001 solid 1px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* Header */
+#header {
+  align-items: center;
+  background-image: linear-gradient(transparent, rgb(255, 255, 86));
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 520px;
+}
+
+.header-content h1 {
+  color: #2a2a2a;
+  font-family: var(font-title);
+  font-size: 4.25rem;
+  font-weight: 600;
+  line-height: 135%; /* 91.8px */
+}
+
+#header img {
+  height: 600px;
+}
+
+/* Courses */
+#courses {
+  align-items: center;
+  background: #fafafa;
+  border-bottom: #fafafa 120px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: center;
+}
+
+#courses h2 {
+  color: #2a2a2a;
+  font-family: var(--font-title);
+  font-size: 2.35rem;
+  font-weight: 700;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.courses-container {
+  align-items: center !important;
+  display: flex;
+  height: 100%;
+  justify-content: space-around !important;
+  margin: 0 auto !important;
+  padding: 10px;
+  width: 70%;
+}
+
+.courses-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+.courses-content-espacamento {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0.3px 0.3px 0.3px black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 15px 40px;
+}
+
+.courses-content h3 {
+  color: #0a0a0a;
+  font-family: var(--font-content);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.courses-content p {
+  color: #4d4d4d;
+  font-family: var(--font-content);
+  font-size: 0.931rem;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+/* School */
+
+#school {
+  background: #003464;
+  /* border-top: 100px solid #003464; */
+  padding-top: 120px;
+}
+
+#school img {
+  width: 636px;
+}
+
+.espacamento-school {
+  display: flex;
+  gap: 10rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.school-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.school-content h3 {
+  color: #fafafa;
+  font-family: var(--font-content);
+  font-size: 2.1242rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.school-content p {
+  color: #fafafa;
+  font-family: var(--font-content);
+  font-size: 1.2rem;
+  line-height: 160%; /* 26.64px */
+  width: 85%;
+}
+
+/* Contacts */
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.espacamento-contacts {
+  padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  width: 80%;
+}
+
+.mapa {
+  margin: 0 auto;
+}
+
+#contacts h3 {
+  font-family: var(--font-content);
+  font-size: 2.2rem;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+#contacts p {
+  color: #071d2e;
+  font-family: var(--font-content);
+  line-height: 1.4rem;
+  text-align: right;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
+/* Footer */
+#footer {
+  background: #2a2a2a;
+  color: #fff;
+  font-family: var(--font-content);
+  font-weight: 400;
+  padding: 35px;
+  text-align: center;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer a:visited {
+  color: #fff;
+}
