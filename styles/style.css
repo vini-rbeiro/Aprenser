@@ -171,6 +171,85 @@ h2 {
   margin: 0 auto 4em;
 }
 
+/* SCHOOL */
 #school {
+  background-color: #003464;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 8em;
+}
+
+#school img {
+  width: 600px;
+}
+
+#school .school__content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#school .school__content h2 {
+  color: #fafafa;
+}
+
+#school .school__content p {
+  color: var(--light-color);
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 148%; /* 26.64px */
+}
+
+/* CONTACTS */
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 4.7em 0 2em;
+}
+
+#contact iframe {
+  margin: auto;
+  width: 100%;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact address {
+  text-align: right;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+#footer {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#footer p {
+  text-align: center;
+  color: var(--light-color);
+}
+
+#footer p a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
+
+#footer img {
   color: white;
+  width: 25px;
 }
